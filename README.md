@@ -1,3 +1,17 @@
+```shell
+git clone --recursive https://github.com/zykon2004/razer-macos.git
+
+cd librazermacos
+make
+./sample_cli
+
+cd ..
+yarn
+yarn update
+export npm_config_python=/opt/homebrew/bin/python3.12
+yarn rebuild
+yarn dist
+```
 <p align="center">
   <img src="resources/hero.png" alt="keyboard demo pic" />
   <p align="center">Open source color effects manager for Razer devices on macOS</p>
